@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="products.css" />
+    <title>Products Page</title>
+  </head>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
+    <a class="navbar-brand" href="#">
+      <img src="jamsjellieslogo.png" height="100px" alt="logo" />
+      <!-- Picture has to be in the same folder -->
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse rounded" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link px-4" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link pr-4" href="Products.html">Products</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="About.html">About Us/Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <body>
+    <!-- Carousel -->
+
+    <!-- Product Page -->
+    <div class="products">
+      <h1>Products</h1>
+      <div class="container-1">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/Products/grapejelly.png"
+                  alt="grapejelly"
+                  style="width: 300px; height: 300px;"
+                />
+              </div>
+              <div class="product-info">
+                <button
+                  type="button"
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#grapemodal"
+                >
+                  <h5>Grape Jelly</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/Products/Strawberry.png"
+                  alt="grapejelly"
+                  style="width: 300px; height: 300px;"
+                />
+              </div>
+              <div class="product-info">
+                <button
+                  type="button"
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#strawberrymodal"
+                >
+                  <h5>Strawberry Jelly</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/Products/applebutter.png"
+                  alt="grapejelly"
+                  style="width: 300px; height: 300px;"
+                />
+              </div>
+              <div class="product-info">
+                <button
+                  type="button"
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#applebuttermodal"
+                >
+                  <h5>Apple Butter</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/Products/Blackberry.png"
+                  alt="grapejelly"
+                  style="width: 300px; height: 300px;"
+                />
+              </div>
+              <div class="product-info">
+                <button
+                  type="button"
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#blackberrymodal"
+                >
+                  <h5>Blackberry Jam</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-2">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/Products/lemon.png"
+                  alt="Lemon Jelly"
+                  style="width: 300px; height: 300px;"
+                />
+              </div>
+              <div class="product-info">
+                <button
+                  type="button"
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#lemonmodal"
+                >
+                  <h5>Lemon Jelly</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/Products/Ginger-Cardamom-Pear-Butter.png"
+                  alt="Super Berry Jam"
+                  style="width: 300px; height: 300px;"
+                />
+              </div>
+              <div class="product-info">
+                <button
+                  type="button"
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#gingermodal"
+                >
+                  <h5>Ginger Cardamom Pear Butter</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/Products/blueberry.png"
+                  alt="grapejelly"
+                  style="width: 300px; height: 300px;"
+                />
+              </div>
+              <div class="product-info">
+                <button
+                  type="button"
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#blueberrymodal"
+                >
+                  <h5>Blueberry Jam</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/Products/mixberry.png"
+                  alt="grapejelly"
+                  style="width: 300px; height: 300px;"
+                />
+              </div>
+              <div class="product-info">
+                <button
+                  type="button"
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#mixberrymodal"
+                >
+                  <h5>Mix Berry Jelly</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-3">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/Products/raspberry.png"
+                  alt="Raspberry Jelly"
+                  style="width: 300px; height: 300px;"
+                />
+              </div>
+              <div class="product-info">
+                <button
+                  type="button"
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#raspberrymodal"
+                >
+                  <h5>Raspberry Jelly</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/Products/Cinnamon-Spiced-Triple-Berry-Jam.png"
+                  alt="Cinnamon Spiced Triple Berry Jam"
+                  style="width: 300px; height: 300px;"
+                />
+              </div>
+              <div class="product-info">
+                <button
+                  type="button"
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#cinnamonspicedmodal"
+                >
+                  <h5>Cinnamon Spiced Triple Berry Jam</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/Products/cinnamonblueberry.png"
+                  alt="Cinnamon Blueberry Jam"
+                  style="width: 300px; height: 300px;"
+                />
+              </div>
+              <div class="product-info">
+                <button
+                  type="button"
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#cinnamonblueberrymodal"
+                >
+                  <h5>Cinnamon Blueberry Jam</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="imgs/Products/superberry.png"
+                  alt="Super Berry Jam"
+                  style="width: 300px; height: 300px;"
+                />
+              </div>
+              <div class="product-info">
+                <button
+                  type="button"
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#superberrymodal"
+                >
+                  <h5>Super Berry Jam</h5>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Up Coming -->
+      <button
+        type="button"
+        class="btn btn-info btn-lg"
+        data-toggle="modal"
+        data-target="#up-comingmodal"
+      >
+        <h2>Coming Soon</h2>
+      </button>
+      <!-- Modals -->
+      <!-- Grape -->
+      <div class="modal fade" id="grapemodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Grape Jelly</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="imgs/Products/grapejelly.png" alt="Grape Jelly" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$9.99 USD</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Strawberry -->
+      <div class="modal fade" id="strawberrymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Strawberry Jelly</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="imgs/Products/Strawberry.png" alt="Strawberry Jelly" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$9.99 USD</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Apple Butter -->
+      <div class="modal fade" id="applebuttermodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Apple Butter</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="imgs/Products/applebutter.png"
+                alt="Apple Butter Jelly"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$14.99 USD</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Blackberry -->
+      <div class="modal fade" id="blackberrymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Blackberry Jam</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="imgs/Products/Blackberry.png" alt="Blackberry Jam" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$9.99 USD</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Lemon -->
+      <div class="modal fade" id="lemonmodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Lemon Jelly</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="imgs/Products/lemon.png" alt="Blackberry Jam" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$9.99 USD</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Super Berry -->
+      <div class="modal fade" id="superberrymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Superberry berry Jam</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="imgs/Products/superberry.png" alt="Blackberry Jam" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$9.99 USD</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Blueberry -->
+      <div class="modal fade" id="blueberrymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Blueberry Jam</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="imgs/Products/blueberry.png" alt="Blueberry Jam" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$9.99 USD</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mix Berry -->
+      <div class="modal fade" id="mixberrymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Mix Berry Jelly</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="imgs/Products/mixberry.png" alt="Mix Berry Jelly" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$9.99 USD</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Raspberry -->
+      <div class="modal fade" id="raspberrymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Raspberry Jelly</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="imgs/Products/raspberry.png" alt="Raspberry Jelly" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$9.99 USD</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cinnamon Spiced Triple Berry -->
+      <div class="modal fade" id="cinnamonspicedmodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Cinnamon Spiced Triple Berry Jam</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="imgs/Products/Cinnamon-Spiced-Triple-Berry-Jam.png"
+                alt="Cinnamon Spiced Triple Berry Jam"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$9.99 USD</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cinnamon Bluberry -->
+      <div class="modal fade" id="cinnamonblueberrymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Cinnamon Blueberry Jam</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="imgs/Products/cinnamonblueberry.png"
+                alt="Cinnamon Blueberry Jam"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$9.99 USD</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ginger -->
+      <div class="modal fade" id="gingermodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Ginger Cardamom Pear Butter</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="imgs/Products/Ginger-Cardamom-Pear-Butter.png"
+                alt="Ginger Cardamom Pear Butter"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$14.99 USD</h2>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Up and Coming -->
+      <div class="modal fade" id="up-comingmodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Two Brand New Flavors!</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="imgs/up-coming/guava.png" alt="Guava Jam" />
+              <img src="imgs/up-coming/pineapple.png" alt="Pineapple Jam" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                cumque, tenetur nesciunt reiciendis non ipsam corrupti voluptas
+                odio repellendus repudiandae aut voluptates? Quaerat iure fuga
+                fugit, nesciunt saepe ipsa blanditiis!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext" style="right: 60px;">
+                <h2>Coming Soon!</h2>
+                <h4>Click to find out more!</h4>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                <h2>More Info</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <div class="footer">
+    <footer>
+      <div class="container row">
+        <div class="col-sm-4">
+          <p>123 Pickup Truck Lane<br />Charlotte, NC</p>
+        </div>
+        <div class="col-sm-4">
+          <p>info@MHJamsandJellies.com</p>
+        </div>
+        <div class="col-sm-4 flex-row-reverse">
+          <a href="#"
+            ><img
+              src="https://pluspng.com/img-png/twitter-logo-png-twitterbird-twitter-png-logo-1528.png"
+              height="40px"
+              alt="twitter logo"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn.clipart.email/d700cf080c24f815fce5ec15ce1dcae6_download-logo-instagram-free-png-transparent-image-and-clipart_400-400.png"
+              height="45px"
+              alt="instagram logo"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn.clipart.email/28ae3335f4499a931c042eb771a46d0e_facebook-logos-png-images-free-download_710-739.png"
+              height="45px"
+              alt="facebook logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</html>
+
+<!-- In order of best selling items:
+
+Grape Jelly
+12 oz
+Strawberry Jelly
+12 oz
+Apple Butter
+12 oz
+Blackberry
+12 oz
+Blueberry
+12 oz
+Mix Berry
+12 oz
+Raspberry
+12 oz
+Cinnamon Spiced Triple Berry Jam
+12 oz
+Cinnamon Blueberry
+12 oz
+Ginger Cardamom Pear Butter
+12 oz
+Lemon
+12 oz
+Super Berry
+12 oz
+
+
+ -->
